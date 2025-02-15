@@ -1,0 +1,61 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2bx2k06lkeu1"]
+
+[ext_resource type="FontFile" uid="uid://d4fn3brmffd8k" path="res://assets/fonts/Xolonium-Regular.ttf" id="1_cek8b"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_dy8j2"]
+font = ExtResource("1_cek8b")
+font_size = 128
+
+[sub_resource type="LabelSettings" id="LabelSettings_7fir6"]
+font = ExtResource("1_cek8b")
+font_size = 128
+
+[node name="hud" type="CanvasLayer"]
+
+[node name="lbl_score" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.437
+anchor_right = 0.563
+anchor_bottom = 0.121
+offset_left = 25.36
+offset_right = -25.36
+offset_bottom = -131.88
+grow_horizontal = 2
+text = "0"
+label_settings = SubResource("LabelSettings_dy8j2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="lbl_message" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.089
+anchor_top = 0.316
+anchor_right = 0.911
+anchor_bottom = 0.684
+offset_left = -0.0800018
+offset_top = 0.019989
+offset_right = 0.0799561
+offset_bottom = -0.0200195
+grow_horizontal = 2
+grow_vertical = 2
+text = "Dodge the Creeps"
+label_settings = SubResource("LabelSettings_7fir6")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="button_start" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.204
+anchor_top = 0.722
+anchor_right = 0.796
+anchor_bottom = 0.849
+offset_left = 0.119995
+offset_top = -0.160095
+offset_right = -0.120056
+offset_bottom = 0.279907
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("1_cek8b")
+theme_override_font_sizes/font_size = 128
+text = "Start"
